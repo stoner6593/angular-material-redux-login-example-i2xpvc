@@ -1,0 +1,14 @@
+<div class="page-wrap">
+	<div class="conntainer">
+		<img src="https://image.ibb.co/nuN8Re/12.jpg" alt="Company or Product Logo" class="logo" />
+		<form [formGroup]="loginForm">
+			<mat-form-field>
+				<input matInput placeholder="Email" formControlName="email" required>
+			</mat-form-field>
+			<mat-form-field>
+				<input matInput placeholder="Password" formControlName="password" required>
+			</mat-form-field>
+			<button [disabled]="!loginForm.valid" mat-raised-button color="primary" (click)="login()">Login</button>
+		</form>
+	</div>
+</div>
